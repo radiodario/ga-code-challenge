@@ -1,0 +1,19 @@
+{
+  "name": "ga-code-challenge",
+  "version": "1.0.0",
+  "description": "code challenge for instructors",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radiodario/ga-code-callenge"
+  },
+  "author": "Dario Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radiodario/ga-code-callenge/issues"
+  },
+  "homepage": "https://github.com/radiodario/ga-code-callenge"
+}
