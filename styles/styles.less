@@ -1,0 +1,87 @@
+body {
+  font-family: Helvetica, arial, sans-serif;
+}
+
+#app {
+  width: 100%;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  & > h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.movie-search {
+  margin: auto;
+  max-width: 500px;
+}
+
+.search-area {
+  text-align: center;
+  font-size: 5em;
+}
+
+.search-result {
+  overflow: hidden;
+  margin-bottom: 5px;
+  border: 1px solid #DDD;
+}
+
+.search-result__img > img {
+  height: 60px;
+}
+
+.search-result__img {
+  margin: 0 10px 0 0;
+  float: left;
+  width: 60px;
+  text-align: center;
+}
+
+.search-result__body {
+  overflow: hidden;
+  margin-top: 10px
+}
+
+.search-result__body__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-result__body__details {
+  margin: 0;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.movie-details {
+  margin: auto;
+  max-width: 900px;
+}
+
+.movie-details__body__title__year {
+  font-size: 0.75em;
+  margin-left: 0.5em;
+}
+
+.movie-details__img {
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+.movie-details__body {
+  overflow: hidden;
+}
+
+.movie-details__body__general, .movie-details__body__ratings {
+  span:first-child {
+    font-weight: bold;
+  }
+}
