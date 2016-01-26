@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/radiodario/ga-code-callenge/issues"
   },
-  "homepage": "https://github.com/radiodario/ga-code-callenge"
+  "homepage": "https://github.com/radiodario/ga-code-callenge",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
+  }
 }
