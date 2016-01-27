@@ -5,11 +5,13 @@ const Route = require('react-router').Route;
 const Main = require('./components/main');
 const Search = require('./components/searchbox');
 const MovieDetails = require('./components/movieDetails');
+const Favorites = require('./components/favorites');
 
 ReactDOM.render((
   <Router>
     <Route component={Main}>
       <Route path="/movies/:imdbID" component={MovieDetails}/>
+      <Route path="/favorites" component={Favorites}/>
       <Route path="*" component={Search}/>
     </Route>
   </Router>

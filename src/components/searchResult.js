@@ -1,11 +1,8 @@
 var React = require('react');
 var Link = require('react-router').Link;
+var movieDataApi = require('../movieDataApi');
 
 module.exports = React.createClass({
-
-  addToFavorites: function() {
-    console.log('added!');
-  },
 
   render : function() {
     const imdbID = this.props.imdbID;
@@ -31,14 +28,6 @@ module.exports = React.createClass({
                 href={imdbURL}
               >
                 View on IMDB
-              </a>
-            </span>
-            <span className="search-result__body__details__addtofaves">
-              <a
-                href={'#'}
-                onClick={this.addToFavorites}
-              >
-                Add to favorites
               </a>
             </span>
           </p>

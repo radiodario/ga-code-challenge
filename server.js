@@ -4,11 +4,11 @@ var app = express();
 var fs = require('fs');
 var path = require('path');
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/dist')));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'dist')));
 
 app.get('/favorites', function(req, res){
   var data = fs.readFileSync('./data.json');
@@ -17,8 +17,8 @@ app.get('/favorites', function(req, res){
 });
 
 app.post('/favorites', function(req, res) {
-  if(!req.body.name || !req.body.oid){
-    res.send("Error");
+  if(!req.body.Title || !req.body.imdbID){
+    res.status(400).send('Bad Request');
     return
   }
 

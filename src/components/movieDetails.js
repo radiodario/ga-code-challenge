@@ -18,6 +18,10 @@ module.exports = React.createClass({
     }
   },
 
+  addToFavorites: function() {
+    this.setState({favorite: true});
+    movieDataApi.addFavorite(this.state);
+  },
 
   render: function() {
     if (this.state.loading) {
@@ -40,6 +44,12 @@ module.exports = React.createClass({
               {'('+ this.state.Year + ')'}
             </span>
           </h2>
+          <div
+            className="movie-details__body__toolbar"
+            style={{display: (this.state.favorite) ? 'none' : null}}
+          >
+            <button onClick={this.addToFavorites}>Add to favorites</button>
+          </div>
           <div className="movie-details__body__plot">
             <p>{this.state.Plot}</p>
           </div>
