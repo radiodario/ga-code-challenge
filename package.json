@@ -4,6 +4,8 @@
   "description": "code challenge for instructors",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "postinstall": "grunt build",
     "test": "npm test"
   },
   "repository": {
