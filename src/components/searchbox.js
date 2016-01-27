@@ -27,10 +27,10 @@ module.exports = React.createClass({
 
   render: function() {
 
-    const searchResults = this.state.results.map(function(result, key) {
+    const searchResults = this.state.results.map(function(result) {
       return (
         <SearchResult
-          key={key}
+          key={result.imdbID}
           {...result}
         />
       );
