@@ -63,7 +63,7 @@ module.exports = function(grunt) {
     }
   });
 
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  require('matchdep').filterAll('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['clean', 'less', 'browserify', 'copy']);
 
