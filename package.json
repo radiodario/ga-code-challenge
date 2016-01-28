@@ -5,8 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "grunt build",
+    "postinstall": "node_modules/.bin/grunt default",
     "test": "npm test"
+  },
+  "engines": {
+    "node": "4.2.1"
   },
   "repository": {
     "type": "git",
