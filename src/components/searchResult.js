@@ -2,6 +2,9 @@ var React = require('react');
 var Link = require('react-router').Link;
 var movieDataApi = require('../movieDataApi');
 
+// This element renders a single search result
+// and is used both by our favorites view and
+// our search view.
 module.exports = React.createClass({
 
   render : function() {
