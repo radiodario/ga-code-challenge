@@ -1,6 +1,6 @@
 # Web Development Instructor Coding Challenge
 
-An interface with OMDBAPI to search and favorite movies. It is written with react
+An interface with OMDBAPI to search and favorite movies. The frontend uses an MVC library (react.js).
 
 [heroku deployment](http://ga-tst.herokuapp.com)
 
