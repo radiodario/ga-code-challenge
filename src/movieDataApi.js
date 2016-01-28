@@ -1,7 +1,7 @@
 const request = require('superagent');
 
 const OMDBAPI_URL = 'http://www.omdbapi.com';
-const FAVES_URL = 'http://localhost:3000';
+const FAVES_URL = '';
 
 module.exports = {
   performSearch: function(query) {
